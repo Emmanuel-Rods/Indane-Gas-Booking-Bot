@@ -18,7 +18,7 @@ async function book() {
     }
   }
   
-  if(String(username)){
+  else if(String(username)){
     const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if(!emailPattern.test(username))
      throw new Error("Please Input a Valid Email")
