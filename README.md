@@ -1,3 +1,6 @@
+
+![Indane Gas](https://github.com/user-attachments/assets/b1131740-206b-4856-8018-0862b872637b)
+
 # Indane Gas Booking Bot
 
 A bot that automatically books your Indane gas cylinder either on a preset schedule or when you trigger it manually. Built with Node.js and Puppeteer, this script handles the login, navigation, and booking process, saving you time and hassle.
