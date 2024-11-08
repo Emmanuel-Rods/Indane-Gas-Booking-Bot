@@ -48,7 +48,7 @@ async function book() {
   //usersname
   await page.locator("input").fill(username);
   await page.locator("input[type='submit']").click();
-  await page.screenshot({ path: "screenshots/login_screenshot.png" });
+  await page.screenshot({ path: "login_screenshot.png" });
   console.log(`Username Filled`);
   //password
   await page.waitForNetworkIdle();
@@ -58,7 +58,7 @@ async function book() {
 
   await delay(2000);
 
-  await page.screenshot({ path: "screenshots/captcha_bypass_screenshot.png" });
+  await page.screenshot({ path: "captcha_bypass_screenshot.png" });
   await page.locator("input[type='submit']").click();
   console.log(`Password Filled`);
   delay(2000);
@@ -67,7 +67,7 @@ async function book() {
   //selecting
   const options = await page.$("[title='Please Select']");
   await options.select("0");
-  await page.screenshot({ path: "screenshots/selection_screenshot.png" });
+  await page.screenshot({ path: "selection_screenshot.png" });
   console.log(`Option Selected`);
   //booking
   await page.locator("div ::-p-text(BOOK NOW)").click();
@@ -79,7 +79,7 @@ async function book() {
     window.scrollTo(0, document.body.scrollHeight);
   });
 
-  await page.screenshot({ path: "screenshots/receipt_screenshot.png" });
+  await page.screenshot({ path: "receipt_screenshot.png" });
   console.log("Process Finished");
   console.timeEnd("Timer");
   await browserObj.close();
