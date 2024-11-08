@@ -11,7 +11,6 @@ A bot that automatically books your Indane gas cylinder either on a preset sched
 ## Prerequisites
 
 - **Node.js** (v12 or later recommended)
-- **Puppeteer**: Installed as part of the setup
 
 ## Installation
 
@@ -19,4 +18,28 @@ A bot that automatically books your Indane gas cylinder either on a preset sched
    ```bash
    git clone https://github.com/Emmanuel-Rods/Indane-Gas-Booking-Bot.git
    cd Indane-Gas-Booking-Bot
-   ``` 
+   ```
+2. **Install Dependencies**:
+   ```bash
+   npm install
+   ```
+3. **Environment Setup**:
+   -Copy the example environment file:
+   ```bash
+   cp .env.example .env
+   ```
+   -Update `.env` with your Indane credentials and other necessary configuration details.
+
+## Usage
+**Run the Bot Manually**
+To initiate a booking manually, use:
+```bash
+npm run bot
+```
+This command will launch the bot and automate the booking process on your Indane account.
+
+
+
+
+**This README is under construction**
+
