@@ -31,7 +31,7 @@ async function book() {
     });
   }
 
-  const browserObj = await puppeteerExtra.launch({ headless: false });
+  const browserObj = await puppeteerExtra.launch({ headless: true });
   const page = await browserObj.newPage();
 
   await page.setViewport({ width: 1920, height: 1080 });
@@ -65,7 +65,6 @@ async function book() {
   await page.waitForNetworkIdle();
 
   //selecting
-  await page.screenshot({ path: "screenshots/dev_screenshot.png" });
   const options = await page.$("[title='Please Select']");
   await options.select("0");
   await page.screenshot({ path: "screenshots/selection_screenshot.png" });
