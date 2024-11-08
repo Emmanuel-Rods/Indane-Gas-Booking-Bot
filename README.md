@@ -5,11 +5,14 @@
 
 A bot that automatically books your Indane gas cylinder either on a preset schedule or when you trigger it manually. Built with Node.js and Puppeteer, this script handles the login, navigation, and booking process, saving you time and hassle.
 
-## Features
+### Key Features
 
-- **Automated Booking**: Schedule your bookings, or initiate them manually when needed.
-- **Easy Setup**: Simple configuration and installation steps.
-- **Error Handling**: Provides clear feedback and error logs for easy troubleshooting.
+- **Automated Booking**: The bot can automatically log in and complete the booking process for your Indane gas cylinder.
+- **Manual Trigger**: You have full control to start the booking process on demand, whenever you need it.
+- **Efficient and Fast**: The bot speeds up the booking process, saving you time compared to manual booking.
+- **Error Handling**: Provides robust error handling with clear feedback, ensuring a smooth user experience.
+- **Customizable**: Easily adjust the bot to your needs by modifying credentials or automating other actions as necessary.
+
 
 ## Prerequisites
 
@@ -42,7 +45,7 @@ npm run bot
 This command will launch the bot and automate the booking process on your Indane account.
 
 
+## Contributing
+Feel free to fork the repository, submit issues, and send pull requests to help improve this bot.
 
-
-**This README is under construction**
 
