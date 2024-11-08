@@ -48,4 +48,13 @@ This command will launch the bot and automate the booking process on your Indane
 ## Contributing
 Feel free to fork the repository, submit issues, and send pull requests to help improve this bot.
 
+## Quick Install
+```bash
+git clone https://github.com/Emmanuel-Rods/Indane-Gas-Booking-Bot.git
+cd Indane-Gas-Booking-Bot
+npm install
+cp .env.example .env
+nano .env
+```
+
 
